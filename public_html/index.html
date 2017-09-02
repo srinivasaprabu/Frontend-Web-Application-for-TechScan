@@ -31,13 +31,44 @@
                 <a href="repo.html">
                     <img src="image/php.png" id="logo"></a>
                 <font color="#000000" style="font-size:12px">PHP</font></p>
+            <p id="rcorners2" >
+                <a href="repo.html">
+                    <img src="image/c.png" id="logo"></a>
+                <font color="#000000" style="font-size:12px">C</font></p>
+            <p id="rcorners2" >
+                <a href="repo.html">
+                    <img src="image/cpp.png" id="logo"></a>
+                <font color="#000000" style="font-size:12px">C++</font></p>
+            <p id="rcorners2" >
+                <a href="repo.html">
+                    <img src="image/ruby.png" id="logo"></a>
+                <font color="#000000" style="font-size:12px">Ruby</font></p>
+            <p id="rcorners2" >
+                <a href="repo.html">
+                    <img src="image/go.png" id="logo"></a>
+                <font color="#000000" style="font-size:12px">Go</font></p>
+            <p id="rcorners2" >
+                <a href="repo.html">
+                    <img src="image/html.png" id="logo"></a>
+                <font color="#000000" style="font-size:12px">HTML</font></p>
+            <p id="rcorners2" >
+                <a href="repo.html">
+                    <img src="image/csharp.png" id="logo"></a>
+                <font color="#000000" style="font-size:12px">C#</font></p>
+
         </div>
         <script>
             var arr = [];
-            arr.push("javascript");
-            arr.push("java");
-            arr.push("python");
-            arr.push("php");
+            arr.push("Javascript");
+            arr.push("Java");
+            arr.push("Python");
+            arr.push("PHP");
+            arr.push("C");
+            arr.push("C++");
+            arr.push("Ruby");
+            arr.push("Go");
+            arr.push("HTML");
+            arr.push("C#");
             for (i = 0; i < arr.length; i++) {
                 var count = 0;
                 $.getJSON('https://api.github.com/search/repositories?q=' + arr[i], function (data) {
