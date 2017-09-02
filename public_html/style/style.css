@@ -322,19 +322,6 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
   border-bottom: 1px solid #FFF;
   margin: 0 0 20px 0;}
 
-table
-{ margin: 10px 0 30px 0;}
-
-table tr th, table tr td
-{ background: #8fb9fc;
-  color: #47433F;
-  padding: 7px 4px;
-  text-align: left;}
-
-table tr td
-{ background: #F0EFE2;
-  color: #47433F;
-  border-top: 1px solid #FFF;}
 
 ul{
     padding: 0;
@@ -417,7 +404,7 @@ div.result{
     margin: 10px;
     border-radius: 25px;
     border: 2px solid #DCDCDC;
-   padding: 20px; 
+    padding: 20px; 
     width: 400px;
     height: 150px;   
 
@@ -425,35 +412,54 @@ div.result{
 #rcorners3 {
     float:right;
     margin: 10px;
-    
+
     border: 2px solid #DCDCDC;
-   
+
     width: 700px;
     height: 100%;   
 
 }
- table.featureInfo, table.featureInfo td, table.featureInfo th {
-                border: 1px solid #ddd;
-                border-collapse: collapse;
-                margin: 0;
-                padding: 0;
-                font-size: 90%;
-                padding: .2em .1em;
-            }
-            table.featureInfo th {
-                padding: .2em .2em;
-                font-weight: bold;
-                background: #eee;
-            }
-            table.featureInfo td {
-                background: #fff;
-            }
-            table.featureInfo tr.odd td {
-                background: #eee;
-            }
-            table.featureInfo caption {
-                text-align: left;
-                font-size: 100%;
-                font-weight: bold;
-                padding: .2em .2em;
-            }
+
+p.p{
+    border-radius: 25px;
+}
+#map {
+    clear: both;
+    position: relative;
+    width: 72%;
+    height: 100%;
+    border: 1px solid black;
+}
+#wrapper {
+    width: 768px;
+}
+#location {
+    float: right;
+}
+/* Styles used by the default GetFeatureInfo output, added to make IE happy */
+table.featureInfo, table.featureInfo td, table.featureInfo th {
+border-style: solid;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 2;
+    font-size: 90%;
+    padding: .1em .1em;
+}
+table.featureInfo th {
+    padding: .1em .1em;
+    font-weight: bold;
+
+}
+table.featureInfo td {
+ padding: .1em .1em;
+ 
+}
+table.featureInfo tr.odd td {
+ padding: .1em .1em;
+}
+table.featureInfo caption {
+    text-align: left;
+    font-size: 100%;
+    font-weight: bold;
+    padding: .2em .2em;
+}
