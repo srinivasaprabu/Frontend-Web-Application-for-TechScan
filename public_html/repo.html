@@ -11,13 +11,46 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-         <div id="header"></div>
+        <div id="header"></div>
         <link rel="stylesheet" type="text/css" href="style/style.css" title="style">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script>
             $("#header").load("header.html");
         </script>
-        <div>TODO write content</div>
+        <br>
+        <br>
+        <p id="rcorners3" >
+            <font color="#000000" style="font-size:20px;font-weight: bold;"> Languages</font>
+        </p>
+        <script>
+            $(document).ready(function () {
+                var arr = [];
+                arr.push("Javascript");
+                arr.push("Java");
+                arr.push("Python");
+                arr.push("PHP");
+                arr.push("C");
+                arr.push("C++");
+                arr.push("Ruby");
+                arr.push("Go");
+                arr.push("HTML");
+                arr.push("C#");
+                for (i = 0; i < arr.length; i++) {
+                    var count = 0;
+                    $.getJSON('https://api.github.com/search/repositories?q=' + arr[i], function (data) {
+                        //alert(arr[count] + "->>" + data["total_count"]);
+                        var para = document.createElement("p");
+                        var node = document.createTextNode(arr[count] + "               " + data["total_count"]);
+                        para.appendChild(node);
+                        var element = document.getElementById("rcorners3");
+                        document.getElementById("rcorners3").style.fontSize = '20';
+                        element.appendChild(para);
+                        count++;
+                    });
+                }
+            });
+
+        </script>
     </body>
 </html>
