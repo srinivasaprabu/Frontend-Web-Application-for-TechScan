@@ -1,6 +1,5 @@
 <html>
     <head>
-        
     </head>
     <body>
         <div id="header"></div>
@@ -10,6 +9,41 @@
         <script>
             $("#header").load("header.html");
         </script>
-
+        <br>
+        <br>
+        <p id="rcorners3" >
+            <font color="#000000" style="font-size:20px;font-weight: bold;"> Languages</font>
+        </p>
+        <div>
+            <p id="rcorners2" >
+                <img src="image/javascript.png" id="logo">
+                <font color="#000000" style="font-size:12px">Javascript</font></p>
+            <p id="rcorners2" >
+                <img src="image/java.png" id="logo">
+                <font color="#000000" style="font-size:12px">Java</font></p>
+            <p id="rcorners2" >
+                <img src="image/python.png" id="logo">
+                <font color="#000000" style="font-size:12px">Python</font></p>
+        </div>
+        <script>
+            var arr = [];
+            arr.push("javascript");
+            arr.push("java");
+            arr.push("php");
+            arr.push("python");
+            for (i = 0; i < arr.length; i++) {
+                var count = 0;
+                $.getJSON('https://api.github.com/search/repositories?q=' + arr[i], function (data) {
+                    //alert(arr[count] + "->>" + data["total_count"]);
+                    var para = document.createElement("p");
+                    var node = document.createTextNode(arr[count] + "       " + data["total_count"]);
+                    para.appendChild(node);
+                    var element = document.getElementById("rcorners3");
+                    document.getElementById("rcorners3").style.fontSize = '20';
+                    element.appendChild(para);
+                    count++;
+                });
+            }
+        </script>
     </body>
 </html>

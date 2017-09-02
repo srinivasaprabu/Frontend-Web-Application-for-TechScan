@@ -6,9 +6,10 @@ html
   padding: 0;}
 
 body
-{ font: normal .80em 'trebuchet ms', arial, sans-serif;
-  
-  color: #777;}
+{  
+    font: normal .80em 'trebuchet ms', arial, sans-serif;
+
+    color: #777;}
 
 p
 { padding: 0 0 20px 0;
@@ -91,7 +92,10 @@ ol li
 
 #header
 {
-  height: 166px;}
+    height: 100px;
+    border:1px;
+    border-style: solid;
+    border-color: #DCDCDC;}
 
 #logo
 { width: 90%;
@@ -230,7 +234,7 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
 { height: 0px;
   text-align: right;
   padding: 66px 16px 0px 300px;}
-  
+
 .form_settings
 { margin: 15px 0 0 0;}
 
@@ -241,12 +245,12 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
 { float: left; 
   width: 200px; 
   text-align: left;}
-  
+
 .form_settings span1
 { float: left; 
   width: 65px; 
   text-align: left;}
-  
+
 .form_settings input, .form_settings textarea
 { padding: 5px; 
   width: 65%;
@@ -254,7 +258,7 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
   border: 1px solid #E5E5DB; 
   background: #FFF; 
   color: #47433F;}
-  
+
 .form_settings .submit
 { font: 100% arial; 
   border: 1px solid; 
@@ -265,7 +269,7 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
   cursor: pointer; 
   background: #1293EE; 
   color: #FFF;}
-  
+
 .form_settings .submit1
 { font: 100% arial; 
   border: 1px solid; 
@@ -292,7 +296,7 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
 { font: 100% arial; 
   width: 299px;
   height: 18px;}
-  
+
 .ssmall  
 { font: 100% arial; 
   width: 299px;
@@ -303,7 +307,7 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
 
 .form_settings .file
 { width: 200px;}
-  
+
 .form_settings .checkbox
 { margin: 4px 0; 
   padding: 0; 
@@ -317,7 +321,7 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
   border-top: 1px solid #D9D5CF;
   border-bottom: 1px solid #FFF;
   margin: 0 0 20px 0;}
-  
+
 table
 { margin: 10px 0 30px 0;}
 
@@ -326,62 +330,62 @@ table tr th, table tr td
   color: #47433F;
   padding: 7px 4px;
   text-align: left;}
-  
+
 table tr td
 { background: #F0EFE2;
   color: #47433F;
   border-top: 1px solid #FFF;}
-  
- ul{
-        padding: 0;
-        list-style: none;
-        margin: 50px 0 38px 0px;
-    }
-    ul li{
-        display: inline-block;
-        position: relative;
-        line-height: 21px;
-        text-align: left;
-    }
-    ul li a{
-        display: block;
-        padding: 8px 25px;
-        color: #333;
-        text-decoration: none;
-    }
-    
-    ul#dropdown li a
-	{ letter-spacing: 0.1em;
-	  font: normal 100% arial, sans-serif;
-	  display: block; 
-	  float: left; 
-	  height: 25px;
-	  width: 130px;
-	  padding: 19px 26px 6px 26px;
-	  text-align: center;
-	  color: #FFF;
-	  text-transform: uppercase;
-	  text-decoration: none;
-	  background: transparent;} 
-  
-    ul li a:hover{
-        color: #fff;
-        background: #939393;
-    }
-    ul li ul.dropdown{
-        min-width: 100%; /* Set width of the dropdown */
-        background: #1293EE;
-        display: none;
-        position: absolute;
-        z-index: 999;
-        left: 0;
-    }
-    ul li:hover ul.dropdown{
-        display: block;	/* Display the dropdown */
-    }
-    ul li ul.dropdown li{
-        display: block;
-    }
+
+ul{
+    padding: 0;
+    list-style: none;
+    margin: 50px 0 38px 0px;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+    line-height: 21px;
+    text-align: left;
+}
+ul li a{
+    display: block;
+    padding: 8px 25px;
+    color: #333;
+    text-decoration: none;
+}
+
+ul#dropdown li a
+{ letter-spacing: 0.1em;
+  font: normal 100% arial, sans-serif;
+  display: block; 
+  float: left; 
+  height: 25px;
+  width: 130px;
+  padding: 19px 26px 6px 26px;
+  text-align: center;
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: transparent;} 
+
+ul li a:hover{
+    color: #fff;
+    background: #939393;
+}
+ul li ul.dropdown{
+    min-width: 100%; /* Set width of the dropdown */
+    background: #1293EE;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+ul li:hover ul.dropdown{
+    display: block;	/* Display the dropdown */
+}
+ul li ul.dropdown li{
+    display: block;
+}
 
 div.services {
     padding: 10px;
@@ -409,3 +413,47 @@ div.result{
     border-style: groove;
     overflow: scroll;
 }
+#rcorners2 {
+    margin: 10px;
+    border-radius: 25px;
+    border: 2px solid #DCDCDC;
+   padding: 20px; 
+    width: 400px;
+    height: 150px;   
+
+}
+#rcorners3 {
+    float:right;
+    margin: 10px;
+    
+    border: 2px solid #DCDCDC;
+   
+    width: 700px;
+    height: 100%;   
+
+}
+ table.featureInfo, table.featureInfo td, table.featureInfo th {
+                border: 1px solid #ddd;
+                border-collapse: collapse;
+                margin: 0;
+                padding: 0;
+                font-size: 90%;
+                padding: .2em .1em;
+            }
+            table.featureInfo th {
+                padding: .2em .2em;
+                font-weight: bold;
+                background: #eee;
+            }
+            table.featureInfo td {
+                background: #fff;
+            }
+            table.featureInfo tr.odd td {
+                background: #eee;
+            }
+            table.featureInfo caption {
+                text-align: left;
+                font-size: 100%;
+                font-weight: bold;
+                padding: .2em .2em;
+            }
